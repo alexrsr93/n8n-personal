@@ -1,7 +1,6 @@
 FROM n8nio/n8n
 
-RUN npm-install
-RUN npm install node-fetch 
+RUN npm install -g node-fetch
 
 ARG PGPASSWORD
 ARG PGHOST
