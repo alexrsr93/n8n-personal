@@ -1,5 +1,8 @@
 FROM n8nio/n8n
 
+RUN apt-get update && apt-get install -y nodejs npm
+RUN npm install node-fetch
+
 ARG PGPASSWORD
 ARG PGHOST
 ARG PGPORT
