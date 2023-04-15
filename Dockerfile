@@ -1,7 +1,6 @@
 FROM n8nio/n8n
 
 RUN npm install -g node-fetch
-RUN pip install yt-dlp
 
 ARG PGPASSWORD
 ARG PGHOST
