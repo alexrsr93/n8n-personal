@@ -1,5 +1,6 @@
 FROM n8nio/n8n
 
+RUN npm install -g npm@latest
 RUN npm install -g node-fetch
 RUN npm install -g langchain
 
