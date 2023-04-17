@@ -1,0 +1,6 @@
+langchain
+tiktoken
+openai
+psycopg
+google-api-python-client
+pyowm

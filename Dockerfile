@@ -1,18 +1,11 @@
-FROM n8nio/n8n
+FROM naskio/n8n-python:latest-debian
 
-RUN apt-get update && \
-    apt-get install -y python3 python3-pip && \
-    python3 -m pip install --upgrade pip
-
-
-RUN cd /usr/local/lib/node_modules/n8n && npm install n8n-nodes-python
 COPY requirements.txt .
 
 RUN python3 -m pip install -r requirements.txt
 
 RUN npm install -g npm@latest
 RUN npm install -g node-fetch
-RUN npm install -g langchain
 
 ARG PGPASSWORD
 ARG PGHOST
