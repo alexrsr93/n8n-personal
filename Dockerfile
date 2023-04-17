@@ -3,6 +3,9 @@ FROM naskio/n8n-python:latest-debian
 COPY requirements.txt .
 
 RUN python3 -m pip install -r requirements.txt
+RUN npm install -g n
+RUN n lts
+RUN n latest
 
 RUN npm install -g npm@latest
 RUN npm install -g node-fetch
