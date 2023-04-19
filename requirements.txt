@@ -4,3 +4,4 @@ openai
 psycopg
 google-api-python-client
 pyowm
+Jinja2
